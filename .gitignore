@@ -9,3 +9,4 @@
 
 # Allow GitHub configuration
 !.github/
+!.github/**

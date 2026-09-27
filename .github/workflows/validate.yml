@@ -1,0 +1,19 @@
+name: Validate notifications.json
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check notifications.json is valid JSON
+        run: python3 -m json.tool notifications.json > /dev/null
+
+      - name: Validate notifications.json against schema.json
+        run: npx --yes ajv-cli validate -s schema.json -d notifications.json --strict=false
