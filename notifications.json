@@ -2,12 +2,12 @@
   "version": 1,
   "notifications": [
     {
-      "id": "2026-09-27-test-notification",
+      "id": "2026-09-27-repo-move-zinalog-org",
       "type": "info",
-      "title": "Test Notification",
-      "message": "This is a test notification used to verify the notification pipeline end-to-end.",
+      "title": "Repositories Moved to the ZinaLog Organization",
+      "message": "ZinaLog's repositories have moved to the ZinaLog GitHub organization. Please update any remotes or bookmarks pointing to the old location.",
       "publishedAt": "2026-09-27T00:00:00Z",
-      "expiresAt": "2026-10-04T00:00:00Z",
+      "expiresAt": null,
       "minVersion": null,
       "maxVersion": null,
       "dismissible": true,
