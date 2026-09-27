@@ -46,7 +46,7 @@ README.md
 | Field | Required | Description |
 |---|---|---|
 | `id` | Yes | Unique notification identifier. Never reuse an ID. |
-| `type` | Yes | `info`, `warning`, `error`, or `success`. |
+| `type` | Yes | `info`, `warning`, `error`, or `success` or `release`. | 
 | `title` | Yes | Short notification title. |
 | `message` | Yes | Plain-text notification message. |
 | `publishedAt` | Yes | ISO 8601 UTC publication timestamp. |

@@ -36,7 +36,7 @@
         },
         "type": {
           "type": "string",
-          "enum": ["info", "warning", "error", "success"]
+          "enum": ["info", "warning", "error", "success","release"]
         },
         "title": {
           "type": "string",
