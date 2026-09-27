@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ZinaLog Notifications",
+  "description": "Schema for notifications.json, the remote notification feed consumed by self-hosted ZinaLog installations.",
+  "type": "object",
+  "required": ["version", "notifications"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "description": "Schema/format version of this file. Increment only on breaking structural changes.",
+      "minimum": 1
+    },
+    "notifications": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/notification" }
+    }
+  },
+  "definitions": {
+    "notification": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "title",
+        "message",
+        "publishedAt",
+        "dismissible"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier. Must never be reused for a different notification.",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": ["info", "warning", "error", "success"]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publishedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 UTC timestamp."
+        },
+        "expiresAt": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "ISO 8601 UTC timestamp, or null if it never expires."
+        },
+        "minVersion": {
+          "type": ["string", "null"],
+          "description": "Minimum ZinaLog version this notification applies to, or null for no lower bound."
+        },
+        "maxVersion": {
+          "type": ["string", "null"],
+          "description": "Maximum ZinaLog version this notification applies to, or null for no upper bound."
+        },
+        "dismissible": {
+          "type": "boolean"
+        },
+        "url": {
+          "type": ["string", "null"],
+          "pattern": "^https://",
+          "description": "HTTPS URL for additional information, or null."
+        }
+      }
+    }
+  }
+}

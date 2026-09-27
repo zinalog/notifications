@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Allow these repository files/directories
+!.gitignore
+!README.md
+!notifications.json
+!schema.json
+
+# Allow GitHub configuration
+!.github/
