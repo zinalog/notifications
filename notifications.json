@@ -2,11 +2,11 @@
   "version": 1,
   "notifications": [
     {
-      "id": "2026-09-27-new-zinalog-repo",
+      "id": "2026-09-29-update-git-repo",
       "type": "info",
-      "title": "ZinaLog Has Moved to the ZinaLog Organization",
-      "message": "ZinaLog's repositories and container images have moved to the ZinaLog GitHub organization. Please update any Git remotes and bookmarks pointing to the old repository. For Docker, use: docker pull ghcr.io/zinalog/zinalog:latest",
-      "publishedAt": "2026-09-27T00:00:00Z",
+      "title": "Update old repository",
+      "message": "Please update any Git remotes and bookmarks pointing to the old repository. For Docker, use: docker pull ghcr.io/zinalog/zinalog:latest",
+      "publishedAt": "2026-09-29T00:00:00Z",
       "expiresAt": null,
       "minVersion": null,
       "maxVersion": null,
