@@ -2,16 +2,17 @@
   "version": 1,
   "notifications": [
     {
-      "id": "2026-09-29-update-git-repo",
-      "type": "info",
-      "title": "Update old repository",
-      "message": "Please update any Git remotes and bookmarks pointing to the old repository. For Docker, use: docker pull ghcr.io/zinalog/zinalog:latest",
-      "publishedAt": "2026-09-29T00:00:00Z",
+      "id": "release-0.3.1",
+      "type": "release",
+      "title": "zinalog 0.3.1 is available",
+      "message": "This release fixes high-severity security advisories in nodemailer and updates Next.js, axios and other dependencies. Upgrade with: docker pull ghcr.io/zinalog/zinalog:latest",
+      "publishedAt": "2026-10-02T00:00:00Z",
       "expiresAt": null,
       "minVersion": null,
       "maxVersion": null,
       "dismissible": true,
-      "url": "https://github.com/zinalog/zinalog"
+      "url": "https://github.com/zinalog/zinalog/releases/tag/v0.3.1",
+      "releaseVersion": "0.3.1"
     }
   ]
 }
