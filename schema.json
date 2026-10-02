@@ -71,6 +71,10 @@
           "type": ["string", "null"],
           "pattern": "^https://",
           "description": "HTTPS URL for additional information, or null."
+        },
+        "releaseVersion": {
+          "type": "string",
+          "description": "Version number associated with a release notification (used when type is \"release\")."
         }
       }
     }
