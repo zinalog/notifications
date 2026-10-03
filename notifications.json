@@ -13,6 +13,18 @@
       "dismissible": true,
       "url": "https://github.com/zinalog/zinalog/releases/tag/v0.3.1",
       "releaseVersion": "0.3.1"
+    },
+    {
+      "id": "zinalog/node-0.1.6",
+      "type": "info",
+      "title": "zinalog Node 0.1.6 is available",
+      "message": "Zinalog node just got an upgrade and moved to to new organisation on npm @zinalog/node. Follow the guides to upgrade",
+      "publishedAt": "2026-10-03T00:00:00Z",
+      "expiresAt": null,
+      "minVersion": null,
+      "maxVersion": null,
+      "dismissible": true,
+      "url": "https://zinalog.com/docs/sdk-libraries",
     }
   ]
 }
