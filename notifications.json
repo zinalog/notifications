@@ -2,6 +2,18 @@
   "version": 1,
   "notifications": [
     {
+      "id": "2026-11-13-deprecated-versions-through-0.3.0",
+      "type": "warning",
+      "title": "Your ZinaLog version is deprecated",
+      "message": "You are running ZinaLog 0.3.0 or earlier, which is deprecated. Please upgrade to 0.3.2 or later. Pull the latest image with: docker pull ghcr.io/zinalog/zinalog:latest, then recreate your ZinaLog container using the updated image.",
+      "publishedAt": "2026-11-13T00:00:00Z",
+      "expiresAt": null,
+      "minVersion": null,
+      "maxVersion": "0.3.0",
+      "dismissible": false,
+      "url": "https://github.com/zinalog/zinalog/releases/tag/v0.3.2"
+    },
+    {
       "id": "release-0.3.2",
       "type": "release",
       "title": "zinalog 0.3.2 is available",
